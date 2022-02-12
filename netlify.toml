@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  functions = "functions"
+  publish = "build"
+ 
+[dev]
+ command = "npm run dev"
+ 
+[functions]
+  directory = "src/routes/api"
+  node_bundler = "esbuild"
