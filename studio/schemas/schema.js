@@ -15,10 +15,10 @@ export default createSchema({
   types: schemaTypes.concat([
     {
       // This is the display name for the type
-      title: "Person",
+      title: "Event",
       
       // The identifier for this document type used in the api's
-      name: "person",
+      name: "event",
       
       // Documents have the type 'document'. Your schema may describe types beyond documents
       // but let's get back to that later.
@@ -36,6 +36,21 @@ export default createSchema({
 
           // The type of this field
           type: "string",
+        },
+        {
+          title: "Year",
+          name: "year",
+          type: "number"
+        },
+        {
+          title: "Thumbnail",
+          name: "thumbnail",
+          type: "image"
+        },
+        {
+          title: "Description",
+          name: "description",
+          type: "text"
         }
       ]
     }

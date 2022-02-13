@@ -9,3 +9,10 @@
 [functions]
   directory = "src/routes/api"
   node_bundler = "esbuild"
+
+  [[redirects]]
+  from = "https://admin.historytimeline.study"
+  to = "https://historytimeline.sanity.studio"
+  status = 301
+  force = false
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
